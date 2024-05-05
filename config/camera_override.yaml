@@ -1,0 +1,7 @@
+/**:
+  zed_node:
+    ros__parameters:
+      general:
+        pub_downscale_factor: 2.0
+      depth:
+        depth_mode: "NONE"

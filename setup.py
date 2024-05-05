@@ -9,6 +9,7 @@ setup(
     data_files=[
         ("share/ament_index/resource_index/packages", ["resource/" + package_name]),
         ("share/" + package_name, ["package.xml"]),
+        ("share/" + package_name + "/config", ["config/camera_override.yaml"]),
         ("share/" + package_name + "/launch", ["launch/inference.launch.py"]),
     ],
     install_requires=["setuptools"],
@@ -19,6 +20,8 @@ setup(
     license="MIT",
     tests_require=["pytest"],
     entry_points={
-        "console_scripts": [],
+        "console_scripts": [
+            "inference = viva_demo.inference:main",
+        ],
     },
 )
