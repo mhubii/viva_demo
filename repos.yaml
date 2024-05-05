@@ -1,0 +1,9 @@
+repositories:
+  zed-ros2-wrapper:
+    url: https://github.com/stereolabs/zed-ros2-wrapper.git
+    type: git
+    version: humble-v4.0.8
+  viva_demo:
+    url: git@github.com:mhubii/viva_demo.git
+    type: git
+    version: main
